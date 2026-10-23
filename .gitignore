@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Local datasets and generated deployment runs
+datasets/
+runs/deployment_tests/
+
+# Keep the verified best checkpoint, but ignore future duplicate checkpoints
+**/weights/last.pt
+
+# Contains a private-network server address; retain locally only
+SERVER_RUN_20261019.md
